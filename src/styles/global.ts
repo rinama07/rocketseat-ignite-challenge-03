@@ -8,34 +8,24 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${(props) => props.theme.color.black};
-    color: ${(props) => props.theme.color.primary};
+    background-color: ${(props) => props.theme.color.background};
+    color: ${(props) => props.theme.color.text};
     -webkit-font-smoothing: antialiased;
   }
 
   body,
   input,
-  textarea,
-  button {
-    font-family: 'Roboto', sans-serif;
-    font-size: ${(props) => props.theme.text.md};
+  span,
+  p {
+    font-family: 'Nunito', sans-serif;
+    font-size: ${(props) => props.theme.text._16};
     font-weight: 400;
   }
 
   :focus,
   button:focus {
-    box-shadow: 0 0 0 2px ${(props) => props.theme.color.secondary};
+    box-shadow: 0 0 0 1px ${(props) => props.theme.color.blue};
     outline: transparent;
-  }
-  
-  input[type=number] {
-    -moz-appearance: textfield;
-    
-    ::-webkit-outer-spin-button,
-    ::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
   }
 
   @media (max-width: 768px) {
