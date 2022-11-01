@@ -7,17 +7,27 @@ export const LayoutContainer = styled.div`
   width: 100vw;
 `;
 
-export const Header = styled.header`
+export const PageHeader = styled.header`
   align-items: center;
-  background-color: ${(props) => props.theme.color.white};
-  display: flex;
-  padding: 1rem 2.5rem;
-`;
-
-export const Main = styled.main`
-  align-items: center;
+  background: ${(props) => props.theme.color.profile};
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: center;
+  gap: 1.375rem;
+  margin: 0 auto;
+  padding: 4.125rem 0 8.375rem;
+  width: 100%;
+
+  & img {
+    height: 35px;
+    width: 45px;
+  }
+
+  & span {
+    text-transform: uppercase;
+  }
+`;
+
+export const PageMain = styled.main`
+  margin: 0 auto;
+  width: calc(100vw - 32rem);
 `;
