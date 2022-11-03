@@ -6,7 +6,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 260px;
-  max-width: 416px;
   padding: 2rem;
 
   & header {
@@ -19,11 +18,14 @@ export const Container = styled.div`
 
 export const PostDate = styled.div`
   color: ${(props) => props.theme.color.span};
+  font-size: ${(props) => props.theme.text._14};
   line-height: 1.6;
 `;
 
 export const Title = styled.div`
   color: ${(props) => props.theme.color.title};
+  font-size: ${(props) => props.theme.text._20};
+  font-weight: 700;
   line-height: 1.6;
 `;
 

@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const Input = styled.input`
   background: ${(props) => props.theme.color.background};
-  border-radius: ${(props) => props.theme.border.radius.md};
   border: 1px solid ${(props) => props.theme.color.border};
+  border-radius: ${(props) => props.theme.border.radius.sm};
   color: ${(props) => props.theme.color.text};
+  line-height: 1.6;
   padding: 0.75rem 0.5rem;
   width: 100%;
 

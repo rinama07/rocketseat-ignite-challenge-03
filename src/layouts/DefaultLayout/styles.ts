@@ -9,7 +9,8 @@ export const LayoutContainer = styled.div`
 
 export const PageHeader = styled.header`
   align-items: center;
-  background: ${(props) => props.theme.color.profile};
+  background: url('src/assets/header-cover.png');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   gap: 1.375rem;

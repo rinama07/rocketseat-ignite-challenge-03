@@ -1,8 +1,9 @@
 export const defaultTheme = {
   border: {
     radius: {
-      sm: '2px',
-      md: '6px',
+      xs: '2px',
+      sm: '6px',
+      md: '8px',
       lg: '10px',
     },
   },
