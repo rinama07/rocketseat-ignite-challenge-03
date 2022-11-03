@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
 import { FilterInput } from '../../components/FilterInput';
+import { GithubLink } from '../../components/GithubLink';
 import { Building, GithubBrands, UserGroup } from '../../components/Icons';
-import { ExternalLink } from '../../components/Link';
 import { PostCard } from '../../components/PostCard';
 
 import { PostList, Profile, SearchBar } from './styles';
@@ -27,9 +27,7 @@ export function HomePage() {
           <header>
             <h1>{user.name}</h1>
 
-            <ExternalLink href={`https://github.com/${user.username}`}>
-              GITHUB
-            </ExternalLink>
+            <GithubLink username={user.username} />
           </header>
 
           <p>{user.bio}</p>
@@ -67,7 +65,7 @@ export function HomePage() {
         {/* TODO: Remove this mocked list */}
         {[1, 2, 3].map((issue) => (
           <li key={issue}>
-            <Link to={`/issue/${issue}`}>
+            <Link to={`/issue?id=${issue}`}>
               <PostCard />
             </Link>
           </li>
