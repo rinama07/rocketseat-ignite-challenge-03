@@ -1,4 +1,4 @@
-# GitHub blog
+# Rocketseat Ignite - GitHub blog
 
 This repository was created to practice Rocketseat's Ignite course concepts and solve challenge.
 
